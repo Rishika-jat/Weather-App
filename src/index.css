@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+html,
+body {
+  @apply m-0 p-0;
+}
+
+body {
+  font-family: "Itim", cursive;
+}
+
+.hourly-container {
+  width: 800px;
+  padding: 5px 5px;
+}
+
+@media (max-width:1100px) {
+  .hourly-container{
+    width: 500px;
+  }
+}
+
+.hourly-container::-webkit-scrollbar {
+  width: 8px;
+  height: 3px;
+}
+.hourly-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.hourly-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+.hourly-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media (max-width:500px) {
+  .UV-index{
+    margin-left: 75px;
+  }
+  .heading-responsive{
+    margin-left: 20px;
+  }
+ .hour-box{
+  margin-left: 4px;
+ }
+}
