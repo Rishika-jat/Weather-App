@@ -1,8 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Search from "./Components/Search";
 
 import Today from "./Components/Today";
-import Hourly from "./Components/Hourly";
 import Weather from "./Components/Weather";
 import Today_Week from "./Components/Today-Week";
 

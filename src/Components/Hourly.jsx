@@ -1,7 +1,7 @@
 
 import React, { useContext } from "react";
 import { WeatherContext } from "./WeatherProvider";
-import Hour from "./Hour";
+import Hour from "./hour"
 
 
 const Hourly = () => {
