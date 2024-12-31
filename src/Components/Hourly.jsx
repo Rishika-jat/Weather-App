@@ -2,7 +2,7 @@
 import React, { useContext } from "react";
 import { WeatherContext } from "./WeatherProvider";
 import Hour from "./Hour";
-import Today_Week from "./Today-Week";
+
 
 const Hourly = () => {
   const { weatherData } = useContext(WeatherContext);
