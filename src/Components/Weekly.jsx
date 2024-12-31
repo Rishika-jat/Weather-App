@@ -1,31 +1,4 @@
-// import React, { useContext } from "react";
-// import { WeatherContext } from "./WeatherProvider";
-// import Week from "./Week";
 
-// const Weekly = () => {
-//   const { weatherForecast } = useContext(WeatherContext);
-  
-//   if (!weatherForecast) return <p>Loading...</p>;
-//   console.log(weatherForecast)
-//   const getDayOfWeek = (dateString) => { const date = new Date(dateString); const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]; return days[date.getUTCDay()]; };
-//   return (
-//     <div className="upper-section">
-//       <div className="hourly-container flex gap-3 overflow-y-hidden overflow-x-scroll">
-//         {weatherForecast.forecast.forecastday.map((day) => (
-//           <Week
-//             key={day.date_epoch}
-//             day={getDayOfWeek(day.date)}
-//             icon={day.day.condition.icon}
-//             temp={day.day.avgtemp_c}
-//             condition={day.day.condition.text}
-//           />
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Weekly;
 import React, { useContext } from "react";
 import { WeatherContext } from "./WeatherProvider";
 import Week from "./Week";
