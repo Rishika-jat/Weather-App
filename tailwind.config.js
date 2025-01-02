@@ -1,5 +1,5 @@
-// tailwind.config.js
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+export default {
   corePlugins: {
     preflight: false, // Disable Tailwind's preflight
   },
@@ -9,3 +9,5 @@ module.exports = {
   },
   plugins: [],
 }
+
+
