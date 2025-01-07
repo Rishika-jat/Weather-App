@@ -1,33 +1,23 @@
 
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { WeatherContext } from "./WeatherProvider";
 import Week from "./Week";
 
 const Weekly = () => {
-  const { weatherData } = useContext(WeatherContext);
+  const { weatherForecast } = useContext(WeatherContext);
 
-  const defaultDays = Array(7).fill({
-    date_epoch: Date.now(),
-    day: {
-      condition: {
-        icon: "default-icon.png",  // Replace with a path to a default icon
-        text: "Default Condition"
-      },
-      avgtemp_c: 25
-    },
-    date: new Date().toISOString().split('T')[0]  // Today's date
-  });
+  const daysToDisplay = weatherForecast?.forecast?.forecastday || [];
 
-  const daysToDisplay = weatherData
-    ? weatherData.forecast.forecastday
-    : defaultDays;
+  useEffect(() => {
+    console.log("daysToDisplay:", daysToDisplay);
+  }, [daysToDisplay]);
 
   return (
     <div className="upper-section">
       <div className="weekly-container flex gap-3 overflow-y-hidden overflow-x-scroll">
         {daysToDisplay.map((day, index) => (
           <Week
-            key={day.date_epoch || index}
+            key={day.date_epoch ?? index}
             day={new Date(day.date).toLocaleDateString('en-US', { weekday: 'long' })}
             icon={day.day.condition.icon}
             temp={day.day.avgtemp_c}
