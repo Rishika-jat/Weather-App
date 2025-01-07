@@ -61,10 +61,10 @@ export const WeatherProvider = ({ children }) => {
 
 
       try {
-        const historyResponse = await fetch(`https://api.weatherapi.com/v1/history.json?key=${apiKey}&q=${fetchCity}&dt=${today}`);
-        const historyData = await historyResponse.json();
-        setWeatherData(historyData);
-        console.log('Historical Weather Data:', historyData);
+        const response = await fetch(`https://api.weatherapi.com/v1/history.json?key=2faf57a08851487ba7321635240111&q=${fetchCity}&dt=${today}`);
+                const data = await response.json();
+                setWeatherData(data);
+                console.log(data);
       } catch (error) {
         console.error('Error fetching historical weather data:', error);
       }
