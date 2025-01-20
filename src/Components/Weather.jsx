@@ -20,7 +20,7 @@ const Weather = () => {
           </div>
 
           <div>
-            <img src="src/assets/UV.png" className="w-16" alt="" />
+            <img src="/UV.png" className="w-16" alt="" />
           </div>
           {/* <div className="bg-yellow-300 w-16 h-16"></div> */}
         </div>
@@ -30,7 +30,7 @@ const Weather = () => {
             <p>{current.maxwind_kph}</p>
           </div>
           <div>
-            <img src="src/assets/Wind_status.png" className="w-16" alt="" />
+            <img src="/Wind_status.png" className="w-16" alt="" />
           </div>
           {/* <div className="bg-yellow-300 w-16 h-16"></div> */}
         </div>
@@ -42,7 +42,7 @@ const Weather = () => {
           </div>
           <div>
             <img
-              src="src/assets/sunrise_set.jpg"
+              src="/sunrise_set.jpg"
               alt=""
               className="w-16 transform rotate-90"
             />
@@ -57,7 +57,7 @@ const Weather = () => {
             <p>{current.avghumidity}%</p>
           </div>
           <div>
-            <img src="src/assets/humidity.png" alt="" className="w-16" />
+            <img src="/humidity.png" alt="" className="w-16" />
           </div>
           {/* <div className="bg-yellow-300 w-16 h-16"></div> */}
         </div>
@@ -67,7 +67,7 @@ const Weather = () => {
         <p>{current.avgvis_km}km</p>
         </div>
          <div>
-          <img src="src/assets/visibility.png" alt="" className="w-14" />
+          <img src="/visibility.png" alt="" className="w-14" />
          </div>
           {/* <div className="bg-yellow-300 w-16 h-16"></div> */}
         </div>
@@ -77,7 +77,7 @@ const Weather = () => {
         <p>{current.daily_chance_of_rain}%</p>
         </div>
          <div>
-          <img src="src/assets/Rain.jpg" alt="" className="w-16" />
+          <img src="/Rain.jpg" alt="" className="w-16" />
          </div>
           {/* <div className="bg-yellow-300 w-16 h-16"></div> */}
         </div>
